@@ -9,7 +9,7 @@
 
 # About SpecsPhones
 
-SpecsPhones is API for public and loaded phones specification information data.
+SpecsPhones is API for public and loaded phones specification information data Created by Mochammad Ihza Rizky Karim.
 
 # EndPoints
 
@@ -39,4 +39,4 @@ SpecsPhones is API for public and loaded phones specification information data.
 
 ### ACCESSES
 
-COMING SOON...
+[specsphones.rf.gd](specsphones.rf.gd)
