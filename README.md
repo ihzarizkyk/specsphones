@@ -39,4 +39,4 @@ SpecsPhones is API for public and loaded phones specification information data C
 
 ### ACCESSES
 
-[specsphones.rf.gd](specsphones.rf.gd)
+[specsphones.rf.gd](http://specsphones.rf.gd)
