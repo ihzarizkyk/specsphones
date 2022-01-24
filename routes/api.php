@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\PhonesController;
+use App\Http\Controllers\API\BrandsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::get("/products/all",[PhonesController::class,'index']);
+Route::get("/products/detail/{id}",[PhonesController::class,'show']);
+Route::post("/products/search",[PhonesController::class,'search']);
+
+Route::get("/brands/all",[BrandsController::class,'index']);

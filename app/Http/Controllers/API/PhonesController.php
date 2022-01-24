@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Phones;
 
 class PhonesController extends Controller
 {
@@ -14,7 +15,8 @@ class PhonesController extends Controller
      */
     public function index()
     {
-        //
+        $phones = Phones::all();
+        return response()->json($phones);
     }
 
     /**
@@ -46,7 +48,8 @@ class PhonesController extends Controller
      */
     public function show($id)
     {
-        //
+        $phone = Phones::where("id",$id)->get();
+        return response()->json($phone);
     }
 
     /**
@@ -81,5 +84,12 @@ class PhonesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function search(Request $req)
+    {
+        $data = $req->search;
+        $phone = Phones::where("brands","LIKE","%".$data."%")->get();
+        return response()->json($phone);
     }
 }
