@@ -28,7 +28,7 @@ SpecsPhones is API for public and loaded phones specification information data.
 ### [POST] Search Data Phones Specification
 
 ```
-/api/products/search
+/api/products/search?search=Key
 ```
 
 ### [GET] Category Phones / Brands
